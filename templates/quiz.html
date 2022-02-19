@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Sapien</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="inner-div">
+            <h2 class="questions" id="question">Question</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer" checked="checked">
+                    <label for="ans1" id="option1">Option1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2">Option2</label>
+                </li>
+            </ul>
+            <button id="submit" class="submit">Submit</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+</body>
+
+</html>
