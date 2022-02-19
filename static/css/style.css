@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Staatliches&family=Stint+Ultra+Condensed&family=Viaoda+Libre&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --hyeon: 'Do Hyeon', sans-serif;
+    --staat: 'Staatliches', cursive;
+    --stint: 'Stint Ultra Condensed', cursive;
+    --libre: 'Viaoda Libre', cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #18024b, #c8aef9);
+    --bggradient2: linear-gradient(to right, #f857a6, #ff5858);
+    --bggradient3: linear-gradient(to right, #DD5E89, #F7BB97);
+    --bggradient4: linear-gradient(to right, #ee9ca7, #ffdde1);
+    /*--bggradient2: linear-gradient(to right, #0F2027, #203A43 #2C5364);*/
+}
+
+
+.txt-color{
+  font-family: var(--hyeon);
+    color: whitesmoke;
+
+}
+header a {
+    font-family: var(--hyeon);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header {
+    background: var(--bggradient);
+  background: url('/static/images/w.jpg');
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar {
+    background: #30054d;
+}
+
+.nav-item {
+    padding: 0.5em;
+    font-size: 1.4em;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-item:last-child {
+    padding-right: 3.5em;
+}
+
+.navbar-brand {
+    padding-left: 10.5em;
+    font-size: 1.4em;
+    color: white;
+}
+
+/*.nav-link:hover {
+    color: black;
+}*/
+
+header .container .row .col-md-7 {
+    padding-top: 13em;
+
+}
+
+/*header {
+    height: 100vh;
+}*/
+
+/*.section-1 .container {
+    height: 90vh;
+
+}*/
+
+.section-1 {
+    padding: 5vmin 0;
+    background: #7c76a2;
+}
+
+.section-1 .container .row .col-md-6 .owner-img img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.5em;
+}
+
+.section-1 .container .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .container .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.section-1 .container .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-1 .container .row .col-md-6 .panel p {
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*.section-2 {
+    height: 100vh;
+}*/
+
+.section-2 .container-fluid .cover {
+    width: 100%;
+    height: 35vmin;
+    background: var(--bggradient4);
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.section-2 .container-fluid .cover .content {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 9vmin;
+}
+
+.section-2 .container-fluid .cover .content h1 {
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.section-2 .container-fluid .cover .content p {
+    font-size: 2vmin;
+    color: #a680a8;
+}
+#sec2{
+  background: var(--bggradient2);
+
+}
+
+.section-2 .container-fluid .projects .project1,
+.section-2 .container-fluid .projects .project2,
+.section-2 .container-fluid .projects .project3,
+.section-2 .container-fluid .projects .project4 {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 28rem;
+    padding-top: 5%;
+    margin: 1rem;
+    border-radius: .5em;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.34);
+}
+
+.section-2 .container-fluid .projects {
+    padding-top: 5vmin;
+   background: url('/static/images/d.jpg');
+}
+
+.section-2 .container-fluid .projects .project1 {
+    position: relative;
+    background: url('/static/images/t.jpg');
+
+}
+
+.section-2 .container-fluid .projects .project2 {
+    position: relative;
+    background: url('/static/images/v.jpg');
+
+}
+
+.section-2 .container-fluid .projects .project3 {
+    position: relative;
+    background: url('/static/images/q.jpg');
+
+}
+
+.section-2 .container-fluid .projects .project4 {
+    position: relative;
+    background: url('/static/images/s.jpg');
+
+}
+
+.section-3 {
+    background: var(--bggradient3);
+}
+
+
+.section-3 .container-fluid .service-intro h1 {
+    padding-top: 2vmin;
+    padding-bottom: 0.1em;
+}
+
+.section-3 .container-fluid .service-intro p {
+    color: var(--light-black);
+    font-size: 2.5vmin;
+    padding-bottom: 2vmin;
+}
+
+.section-3 .container-fluid .cards .card {
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.section-3 .container-fluid .cards div {
+    padding: 0;
+    margin: 0;
+    background: url('/static/images/w.jpg');
+}
+
+.section-3 .container-fluid .cards .card .card-body .title {
+    background:
+        /* rgba(208, 241, 241, 0.199);*/
+        #4c496e;
+    padding: 1.4rem 2.5rem;
+    font-size: 2vmin;
+   background: url('/static//images/m.jpg');
+}
+
+.section-3 .container-fluid .cards .card .card-body .card-text {
+    padding: 1.5rem 2rem;
+    color: white;
+}
+
+.section-3 .container-fluid .cards .card .service-link {
+    background: rgba(208, 241, 241, 0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.section-3 .container-fluid .cards .card .service-link a {
+    font-size: 2vmin;
+    padding: 0.5em 0.2em;
+}
+
+.section-4 {
+    /*height: 35vh;*/
+    background: var(--bggradient4);
+}
+
+.section-4 .container-fluid .row .col-md-12 h1 {
+    padding-top: 5vmin;
+}
+
+.section-4 .container-fluid .platform {
+    padding-top: 8.5vmin;
+    padding-bottom: 4vmin;
+}
+
+.section-4 .container-fluid .platform .col-md-3 .d-flex .text {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.section-4 .container-fluid .platform .col-md-3 .d-flex {
+    transition: transform 0.3s ease-out;
+}
+
+.section-4 .container-fluid .platform .col-md-3 .d-flex:hover {
+    transform: translateY(8px);
+}
+
+
+.text-muted {
+    font-weight: bold;
+}
+
+
+footer {
+
+    background: #110128;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
+
+.section-4 a {
+    text-decoration: none;
+    color: black;
+}
