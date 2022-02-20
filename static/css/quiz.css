@@ -17,7 +17,7 @@ html{
     display: grid;
     place-items: center;
     background-color: hsl(206, 92%, 94%);
-    background-image: url("/static/images/xa.jpg");
+    background-image: url("/static/images/w.jpg");
     
 }
 .inner-div{
